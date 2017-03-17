@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="origin string:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-Fx-rZa">
+                                <rect key="frame" x="46" y="103" width="283" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FDF-mj-cyi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="strong string:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arn-Cz-XWC">
+                                <rect key="frame" x="46" y="178" width="283" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LUS-zf-ZV3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copy string:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB8-Vb-14q">
+                                <rect key="frame" x="46" y="293" width="283" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="hcB-aW-JHe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S1f-Fx-rZa" firstAttribute="trailing" secondItem="arn-Cz-XWC" secondAttribute="trailing" id="6hu-lx-yfs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S1f-Fx-rZa" secondAttribute="trailing" constant="30" id="739-Wa-sir"/>
+                            <constraint firstItem="S1f-Fx-rZa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="J0v-QW-xWS"/>
+                            <constraint firstItem="S1f-Fx-rZa" firstAttribute="trailing" secondItem="iB8-Vb-14q" secondAttribute="trailing" id="fc2-sp-IOA"/>
+                            <constraint firstItem="S1f-Fx-rZa" firstAttribute="leading" secondItem="arn-Cz-XWC" secondAttribute="leading" id="gsk-NB-X0l"/>
+                            <constraint firstItem="iB8-Vb-14q" firstAttribute="top" secondItem="arn-Cz-XWC" secondAttribute="bottom" constant="65" id="mmb-MG-cSn"/>
+                            <constraint firstItem="S1f-Fx-rZa" firstAttribute="leading" secondItem="iB8-Vb-14q" secondAttribute="leading" id="pzC-7A-EG5"/>
+                            <constraint firstItem="S1f-Fx-rZa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="rGS-fi-uLN"/>
+                            <constraint firstItem="arn-Cz-XWC" firstAttribute="top" secondItem="S1f-Fx-rZa" secondAttribute="bottom" constant="25" id="skK-LI-jrN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="copyLabel" destination="iB8-Vb-14q" id="zlL-Yf-Ols"/>
+                        <outlet property="copyedLabel" destination="iB8-Vb-14q" id="zBa-r7-LGx"/>
+                        <outlet property="originLabel" destination="S1f-Fx-rZa" id="arw-rB-4Mp"/>
+                        <outlet property="strongLabel" destination="arn-Cz-XWC" id="dff-PV-F7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+</document>
